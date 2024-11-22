@@ -1,5 +1,5 @@
-#ifndef __TIMER_HPP_
-#define __TIMER_HPP_
+#ifndef __TIMER_HPP__
+#define __TIMER_HPP__
 
 #include "SFML/System.hpp"
 #include "../../Globals.hpp"
@@ -18,4 +18,4 @@ public:
 };
 
 
-#endif //__TIMER_HPP_
+#endif //__TIMER_HPP__

@@ -29,6 +29,8 @@ add_executable(ad_astra
     src/Globals.hpp 
     src/System/Logic/Timer.hpp
     src/System/Logic/Timer.cpp
+    src/Graphic/Interactive/Button.cpp
+    src/Graphic/Interactive/Button.hpp
 )
 
 target_link_libraries(ad_astra PRIVATE sfml-graphics)

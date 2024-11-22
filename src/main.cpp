@@ -1,5 +1,6 @@
 #include "SFML/Window.hpp"
 #include "System/Logic/Timer.hpp"
+#include "Graphic/Interactive/Button.hpp"
 
 sf::Clock Timer::clk;
 uint64_t Timer::dt;
