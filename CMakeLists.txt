@@ -26,6 +26,9 @@ include_directories(SFML)
 
 add_executable(ad_astra 
     src/main.cpp 
+    src/Globals.hpp 
+    src/System/Logic/Timer.hpp
+    src/System/Logic/Timer.cpp
 )
 
 target_link_libraries(ad_astra PRIVATE sfml-graphics)
