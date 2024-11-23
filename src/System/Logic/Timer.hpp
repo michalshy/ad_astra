@@ -5,16 +5,15 @@
 #include "../../Globals.hpp"
 
 class Timer {
-    static sf::Clock clk ;
-    static uint64_t dt;
-    
+    sf::Clock clk ;
+    uint64_t dt;
 public:
-    Timer();
-    static void CheckTimestep();
-    static void Init();
-    static sf::Time GetElapsed();
-    static void Restart();
-    static uint64_t GetDt();
+    explicit Timer();
+    const void CheckTimestep();
+    const void Init();
+    const sf::Time GetElapsed();
+    const void Restart();
+    const uint64_t GetDt();
 };
 
 

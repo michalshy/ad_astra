@@ -1,24 +1,26 @@
 #include "Timer.hpp"
 
-Timer::Timer() = default;
+Timer::Timer() {
+    clk = sf::Clock();
+}
 
-void Timer::Init() {
+const void Timer::Init() {
     (void)clk.restart();
 }
 
-sf::Time Timer::GetElapsed() {
+const sf::Time Timer::GetElapsed() {
     return clk.getElapsedTime();
 }
 
-void Timer::Restart() { 
+const void Timer::Restart() { 
     dt = clk.restart().asMicroseconds(); 
 }
 
-uint64_t Timer::GetDt() { 
+const uint64_t Timer::GetDt() { 
     return dt; }
 
 
-void Timer::CheckTimestep() {
+const void Timer::CheckTimestep() {
     Timer::Restart();
     if(dt > SYSTEM::LOGIC::TIMER::DELTA_STEP)
     {

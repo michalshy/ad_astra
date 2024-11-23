@@ -5,7 +5,8 @@
 
 class Button : public sf::Drawable
 {
-
+private:
+    
 };
 
 
